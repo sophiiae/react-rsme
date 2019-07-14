@@ -129,6 +129,13 @@ p {
   color: #999;
 }
 
+.success {
+  padding: 0px 30px 0px 64px;
+}
+
+.success h1 {
+  color: #3f3e3e;
+}
 .next {
   text-align: right;
   padding: 10px 40px 0px 0px;

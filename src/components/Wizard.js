@@ -3,7 +3,7 @@ import SideImage from "./SideImage";
 import Form from "./Form";
 
 const Wizard = () => {
-  let page = 2;
+  let page = 3;
   return (
     <div className="wizard">
       <section>

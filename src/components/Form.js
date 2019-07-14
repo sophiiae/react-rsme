@@ -3,24 +3,26 @@ import LinkedIn from "./linkedin/LinkedIn";
 import Next from "./Next";
 import Steps from "./Steps";
 import Github from "./Github";
+import SuccessPage from "./Success";
 
 const stepPage = num => {
   if (num === 1) return <LinkedIn />;
   else if (num === 2) return <Github />;
+  else return <SuccessPage />;
 };
 const Form = props => {
-  let page = stepPage(props.page);
+  let pageContent = stepPage(props.page);
 
   return (
     <div className="form">
       <div className="form-content">
-        <Steps pg={props.page} />
+        <Steps page={props.page} />
         <div className="form-header">
           <h2>RSME</h2>
         </div>
-        {page}
+        {pageContent}
       </div>
-      <Next />
+      <Next page={props.page} />
     </div>
   );
 };
