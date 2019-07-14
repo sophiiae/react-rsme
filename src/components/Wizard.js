@@ -3,15 +3,16 @@ import SideImage from "./SideImage";
 import Form from "./Form";
 
 const Wizard = () => {
+  let page = 2;
   return (
-    <form className="wizard">
+    <div className="wizard">
       <section>
         <div className="wizard-inner">
-          <SideImage />
-          <Form page="1" />
+          <SideImage page={page} />
+          <Form page={page} />
         </div>
       </section>
-    </form>
+    </div>
   );
 };
 

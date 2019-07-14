@@ -1,8 +1,8 @@
 import React from "react";
 
-const LinkedIn = props => {
+const LinkedInLogo = props => {
   return (
-    <div className="linkedin">
+    <div className="linkedinLogo">
       <a href="/">
         <img
           src="https://i.ibb.co/bBnsczc/linkedin.png"
@@ -15,4 +15,4 @@ const LinkedIn = props => {
   );
 };
 
-export default LinkedIn;
+export default LinkedInLogo;
