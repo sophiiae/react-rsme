@@ -7,7 +7,7 @@ const Next = props => {
   let txt = getText(props.page);
   return (
     <div className="next">
-      <button>{txt}</button>
+      <button onClick={props.handleClick}>{txt}</button>
     </div>
   );
 };

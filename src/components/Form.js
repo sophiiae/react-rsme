@@ -22,7 +22,7 @@ const Form = props => {
         </div>
         {pageContent}
       </div>
-      <Next page={props.page} />
+      <Next page={props.page} handleClick={props.handleClick} />
     </div>
   );
 };
